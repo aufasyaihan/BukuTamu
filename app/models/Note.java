@@ -3,20 +3,17 @@ package models;
 import play.db.jpa.Model;
 
 import javax.persistence.Entity;
+import javax.persistence.ManyToOne;
 import javax.persistence.OneToOne;
-import javax.persistence.OneToMany;
 import java.util.Date;
 
 @Entity
 public class Note extends Model {
     public String title;
-    public Date tgl;
-    
+    public String tgl;
     @OneToOne
     public Todolist toDolist;
-    
-    @OneToMany
-    public Content isi;
+    public String isi;
 
     @Override
     public String toString() {

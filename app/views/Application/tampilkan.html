@@ -7,42 +7,57 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <style>
         .font{
-            font-family:poppins;
+          font-family:poppins;
+        }
+        .cards{
+          transition: all 0.2s ease;
+          cursor: pointer;
+          display: block;
+        }
+        .cards:hover{
+          transform: scale(1.1);
+        }
+        nav{
+          border-radius: 0px 0px 10px 10px;
         }
     </style>
   <link rel="shortcut icon" href="journal.svg" type="image/x-icon">
   <title>Notes</title>
 </head>
-<body>
-<nav class="navbar bg-light shadow p-3 mb-5 bg-body">
+<body style="background: #adcbe3;">
+<nav style="background: #63ace5;" class="navbar shadow p-3 mb-5">
   <div class="container-fluid">
     <ul class="navbar-nav mx-auto">
       <li class="nav-item active text-center">
-        <a class="fs-1 font navbar-brand fw-semibold" href="@{application.tampilkan()}"><span class="text-warning">N</span>otes</a>
+        <a class="fs-1 font navbar-brand fw-semibold text-light" href="@{application.tampilkan()}"><span>N</span>otes</a>
       </li>
     </ul>
   </div>
 </nav>
 <div class="container">
-  <a class="bi btn btn-primary bi-plus-square" href="@{application.insert()}"> New Note</a>
   <section>
-    <div class="container py-5">
+    <div class="container">
+    <a class="bi btn btn-light rounded-circle bi-plus-circle" href="@{application.insert()}"></a><br><br>
       <div class="row">
-      <div class="col-md-6 col-lg-4 mb-4 mb-md-0">
+      <div class="col-md-6 col-lg-4 mb-4">
         #{list items:daftar, as:'x'}
-        <div class="card shadow">
+        <a href="@{application.note(x.id)}" style="text-decoration:none;">
+        <div class="card cards shadow">
           <div class="d-flex justify-content-between p-3">
-            <h3 class="">${x.title}</h3>
-            <div class="bg-warning rounded-circle d-flex align-items-center justify-content-center shadow-1-strong"
-                    style="width: 35px; height: 35px;">
-              <a class="bi bi-pen text-light" href="@{application.edit(x.id)}"></a>
+            <h3 class="text-black">${x.title}</h3>
+            <div>
+              <form action="@{application.hapus()}" method="post" name="note">
+                <input type="hidden" name="note.id" value="${x.id}">
+                <button style="border-radius: 50px;" class="btn btn-light btn-sm bi bi-trash text-danger shadow-sm"></button>
+              </form>
             </div>
           </div>
           <div class="card-body">
             <div class="d-flex justify-content-between muted text-muted">
-              <p class="small">${x.isi}...</p>
+              <p id="isi" class="isi small">${x.isi}</p>
             </div>
             <div class="d-flex justify-content-between mb-3">
               <a href="#"></a>
@@ -50,6 +65,7 @@
               <p class="fw-semibold text-end">${x.tgl}</p>
           </div>
         </div>
+        </a>
       </div>
         <div class="col-md-6 col-lg-4 mb-4 mb-md-0">
           #{/list}
@@ -59,6 +75,10 @@
   </section>
 </div>
 <script >
+  let isi = document.getElementById("isi")
+  if(isi.innerText.length > 100){
+    isi.innerText = isi.innerText.substr(0,100) + "..."
+  }
 </script>
 </body>
 </html>

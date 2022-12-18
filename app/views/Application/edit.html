@@ -29,18 +29,18 @@
   </div>
 </nav>
 <div class="container">
-  <form class="form-horizontal" action="@{application.simpan()}" method="post" name="tamu">
+  <form class="form-horizontal" action="@{application.simpan()}" method="post" name="note">
     <div class="col-sm-11">
       <label class="form-label">Judul</label>
-      <input type="text" class="form-control" name="tamu.title" id="tamu.title" value="${z.title}">
+      <input type="text" class="form-control" name="note.title" id="note.title" value="${z.title}">
     </div>
     <div class="col-sm-11">
       <label class="form-label">Isi</label>
-      <textarea class="form-control" name="tamu.isi" id="tamu.isi" cols="30" rows="3">${z.isi}</textarea>
+      <textarea class="form-control" name="note.isi" id="note.content.isi" cols="30" rows="3">${z.isi}</textarea>
     </div>
     <div class="mb-3 form-check">
     </div>
-    <input type="hidden" name="tamu.id" value="${z.id}">
+    <input type="hidden" name="note.id" value="${z.id}">
     <a class="btn btn-danger" href="@{application.tampilkan()}">Back</a>
     <button type="submit" class="btn btn-success">Edit</button>
   </form>

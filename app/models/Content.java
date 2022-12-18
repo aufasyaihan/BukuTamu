@@ -8,4 +8,9 @@ import javax.persistence.Entity;
 public class Content extends Model {
     public String isi;
     public String tipe;
+
+    @Override
+    public String toString() {
+        return isi;
+    }
 }
