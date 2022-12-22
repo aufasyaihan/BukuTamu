@@ -1,27 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a7671c78-6767-4de9-8f7a-166714e79471" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/views/Application/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/Application/note.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/Content.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/Content.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/Note.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/Note.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/Application/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/Application/edit.html" afterDir="false" />
+    <list default="true" id="a7671c78-6767-4de9-8f7a-166714e79471" name="Changes" comment="origin">
       <change beforePath="$PROJECT_DIR$/app/views/Application/insert.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/Application/insert.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/Application/journal.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/Application/note.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/Application/note.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/Application/tampilkan.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/Application/tampilkan.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/note.ipr" beforeDir="false" afterPath="$PROJECT_DIR$/note.ipr" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/note.iws" beforeDir="false" afterPath="$PROJECT_DIR$/note.iws" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/_app_views_Application_edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/_app_views_Application_edit.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/_app_views_Application_insert.html" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/_app_views_Application_insert.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/_app_views_Application_note.html" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/_app_views_Application_note.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/_app_views_Application_tampilkan.html" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/_app_views_Application_tampilkan.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/controllers.Application" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/controllers.Application" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/models.Content" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/models.Content" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/models.Note" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/models.Note" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tmp/classes/controllers/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/classes/controllers/Application.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tmp/classes/models/Content.class" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/classes/models/Content.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tmp/classes/models/Note.class" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/classes/models/Note.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,6 +62,14 @@
       <option name="presentableId" value="Default" />
       <updated>1671252026519</updated>
     </task>
+    <task id="LOCAL-00001" summary="origin">
+      <created>1671344549600</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1671344549600</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -87,5 +82,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="origin" />
+    <option name="LAST_COMMIT_MESSAGE" value="origin" />
   </component>
 </project>

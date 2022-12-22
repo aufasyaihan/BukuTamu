@@ -28,11 +28,11 @@
   <title>Notes</title>
 </head>
 <body style="background: #adcbe3;">
-<nav style="background: #63ace5;" class="navbar shadow p-3 mb-5">
+<nav style="background: #63ace5;" class="navbar shadow p-3 mb-4">
   <div class="container-fluid">
     <ul class="navbar-nav mx-auto">
       <li class="nav-item active text-center">
-        <a class="fs-1 font navbar-brand fw-semibold text-light" href="@{application.tampilkan()}"><span>N</span>otes</a>
+        <a class="fs-1 font navbar-brand fw-semibold text-light" href="@{application.tampilkan()}">Notes</a>
       </li>
     </ul>
   </div>
@@ -40,12 +40,12 @@
 <div class="container">
   <section>
     <div class="container">
-    <a class="bi btn btn-light rounded-circle bi-plus-circle" href="@{application.insert()}"></a><br><br>
+    <a class="bi btn btn-light rounded-circle bi-plus-circle" href="@{application.insert()}"></a>
       <div class="row">
-      <div class="col-md-6 col-lg-4 mb-4">
+      <div class="col-md-6 col-lg-4">
         #{list items:daftar, as:'x'}
         <a href="@{application.note(x.id)}" style="text-decoration:none;">
-        <div class="card cards shadow">
+        <div class="card cards shadow mt-4">
           <div class="d-flex justify-content-between p-3">
             <h3 class="text-black">${x.title}</h3>
             <div>
