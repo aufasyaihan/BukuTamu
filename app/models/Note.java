@@ -11,8 +11,6 @@ import java.util.Date;
 public class Note extends Model {
     public String title;
     public String tgl;
-    @OneToOne
-    public Todolist toDolist;
     public String isi;
 
     @Override

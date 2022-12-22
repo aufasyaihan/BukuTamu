@@ -34,10 +34,6 @@ public class Application extends Controller {
         note.save();
         tampilkan();
     }
-    public static void edit(Long id){
-        Note z = Note.find("id=?1", id).first();
-        render(z);
-    }
     public static void note(Long id){
         Note z = Note.find("id=?1", id).first();
         render(z);
